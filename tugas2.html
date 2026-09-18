@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+    <h2>Form Pendaftaran Mahasiswa</h2>
+
+    <!-- Form menggunakan method POST dan fieldset/legend sesuai materi slide -->
+    <form method="POST" action="#">
+        <fieldset>
+            <legend>Data Pendaftaran</legend>
+
+            <!-- 1. Input Text -->
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" required><br><br>
+
+            <!-- 2. Input Password -->
+            <label for="sandi">Password:</label><br>
+            <input type="password" id="sandi" name="sandi" required><br><br>
+
+            <!-- 3. Select Option (Dropdown) -->
+            <label for="jurusan">Program Studi:</label><br>
+            <select id="jurusan" name="jurusan">
+                <option value="Fakultas Teknik">S1 Teknik Sipil</option>
+                <option value="Fasilkom-Ti">S1 Ilmu Komputer</option>
+                <option value="Fasilkom-Ti">S1 Teknologi Informasi</option>
+            </select><br><br>
+
+            <!-- 4. Radio Button -->
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="pria" name="jk" value="Pria">
+            <label for="pria">Pria</label>
+            <input type="radio" id="wanita" name="jk" value="Perempuan">
+            <label for="wanita">Perempuan</label><br><br>
+
+            <!-- 5. Checkbox -->
+            <label>Informasi Yang Disukai:</label><br>
+            <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+            <label for="olahraga">Olahraga</label>
+            <input type="checkbox" id="travelling" name="hobi" value="Travelling">
+            <label for="travelling">Travelling</label>
+            <input type="checkbox" id="mendengarkan musik" name="hobi" value="Mendengarkan Musik">
+            <label for="mendengarkan musik">Mendengarkan Musik</label><br><br>
+
+            <!-- 6. Textarea -->
+            <label for="alamat">Alamat Rumah:</label><br>
+            <textarea id="alamat" name="alamat" rows="4" cols="30"></textarea><br><br>
+
+            <!-- 7. Submit & Reset Button -->
+            <input type="submit" value="Daftar">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+    <br>
+    
+    <!-- Link Navigasi Kembali ke Halaman Utama -->
+    <a href="index.html">← Kembali ke Halaman Utama</a>
+</body>
+</html>
